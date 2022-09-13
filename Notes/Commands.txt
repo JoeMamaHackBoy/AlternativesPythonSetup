@@ -46,7 +46,7 @@ Run the command to include the main Python installed in your version into the al
 Check the configuration of the Python version:
     $sudo update-alternatives --configure python3
     
-(You can choose whatever Python version to be temperarely use)
+(You can choose whatever Python version to be temporary use)
 
 
     
