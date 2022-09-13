@@ -1,0 +1,53 @@
+Install the build essential for the multiple Python setup:
+    $sudo apt install build-essenstial
+
+Check the main version of Python installed in your linux system:
+    $python3 -V
+
+Install the different Python version on python.org and install the tarball file
+After downloading the tarball of the selected Python version
+Unpack the Python Zip File:
+    $tar xvzf {PythonZipFile}
+
+Go the unzipped Python source file directory:
+    $cd /Downloads/{NameOfYourPythonFolder}/{PythonSourceFile}
+
+Run Bash commands to configure the Python source file:
+    $./configure --enable-optimizations
+
+Run the Python installation for alternative Python:
+    $sudo make altinstall
+    
+Check the if the Python version is setted up in the /local/lib folder:
+    $ls /usr/local/lib
+    $ls /usr/local/lib | grep python
+    
+Find the Python location installed to your bin folder:
+    $type -a python{Version}
+    $type -a python3.7
+
+After running the command, you should get an output of example:
+python3.7 is /usr/local/bin/python3.7
+
+Which is in your bin folder,
+Run the command of including the Python to the alternative setup:
+    $sudo update-alternatives --install /usr/bin/python3 python3 /usr/local/bin/python3.7 1
+
+Syntax:  
+    $sudo update-alternatives [opt] [COMMANDS]
+
+For more information about the update-alternative run the commands:
+    $man update-alternatives
+
+Run the command to include the main Python installed in your version into the alternative:
+    $sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python{YourMainPythonVersion} {IntHigherThanAltPython}
+    $sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 3
+    
+Check the configuration of the Python version:
+    $sudo update-alternatives --configure python3
+    
+(You can choose whatever Python version to be temperarely use)
+
+
+    
+    
