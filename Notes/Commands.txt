@@ -7,7 +7,9 @@ Check the main version of Python installed in your linux system:
 Install the different Python version on python.org and install the tarball file
 After downloading the tarball of the selected Python version
 Unpack the Python Zip File:
-    $tar xvzf {PythonZipFile}
+    $tar -xvzf {PythonZipFile}
+Move the unzipped Python source file to new directory(optional):
+    $mv {UnzippedPythonSourceFile} /{NameOfYourPythonFolder}
 
 Go the unzipped Python source file directory:
     $cd /Downloads/{NameOfYourPythonFolder}/{PythonSourceFile}
